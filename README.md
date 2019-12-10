@@ -18,9 +18,9 @@ Staring here, only equally spaced labeling method was applied to do the classifi
    
 Consider that the dataset is time related. As we known from time series, timing has a huge influence in unit price as well. Base on this, think of some close edge situations, we give it a 1 class tolerance and would like to see how that works. Here goes the result:
 
-   * 1. Neural Network:               87.8%
-    * 2. Gradient Boosting Classifier: 86.0%
-    * 3. Random Forest Classifier:     84.1%
-    * 4. Decision Tree Classifier:     79.0%
-    * 5. KNeighbors:                   73.4%
-    * 6. SVM:                          68.2%
+   * 1. Neural Network:               87.3%
+   * 2. Gradient Boosting Classifier: 87.0%
+   * 3. Random Forest Classifier:     84.8%
+   * 4. Decision Tree Classifier:     80.0%
+   * 5. KNeighbors:                   74.3%
+   * 6. SVM:                          68.2%
