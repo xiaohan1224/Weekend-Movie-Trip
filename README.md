@@ -6,7 +6,7 @@ Resource: https://grouplens.org/datasets/movielens/
 
 The dataset contains, comments towards different movies from various users, movie ids, ratings and etc. 
 The movie genres in this dataset are:
-	**  Action
+	* ) Action
 	*  Adventure
 	*   Animation
 	* Children's
