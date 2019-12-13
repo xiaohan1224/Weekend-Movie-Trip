@@ -6,25 +6,25 @@ Resource: https://grouplens.org/datasets/movielens/
 
 The dataset contains, comments towards different movies from various users, movie ids, ratings and etc. 
 The movie genres in this dataset are:
-	* ) Action
-	*  Adventure
-	*   Animation
-	* Children's
-	* Comedy
-	* Crime
-	* Documentary
-	* Drama
-	* Fantasy
-	* Film-Noir
-	* Horror
-	* Musical
-	* Mystery
-	* Romance
-	* Sci-Fi
-	* Thriller
-	* War
-	* Western
-	* (no genres listed)
+	- Action
+	- Adventure
+	- Animation
+	- Children's
+	- Comedy
+	- Crime
+	- Documentary
+	- Drama
+	- Fantasy
+	- Film-Noir
+	- Horror
+	- Musical
+	- Mystery
+	- Romance
+	- Sci-Fi
+	- Thriller
+	- War
+	- Western
+	- (no genres listed)
 
 ## Purpose:
    To determine similar movies using ratings and tags. 
