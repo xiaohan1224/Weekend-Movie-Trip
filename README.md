@@ -1,26 +1,57 @@
-# Beijing Housing Price Classification:
-1. Two kinds of labels are generated based on unit price
-	* 1.1 Equally spaced 
-	* 1.2 Equally area   
-# Purpose
-The purpose of doing is to see how labels could influence the result. As we know, for labels are given by people’s will, for example, movie rating and etc. So i got the freedom to choose the way that i would like to label the data. While plotting all the data with many bins, new found it actually follows Gaussian distribution, in this way, the label generated should also follow gaussian distribution closely, which turns out it does! 
+## Weekend Movie Trip
 
-# Result
-And the second method of labeling is just an extreme experiment, that i want to create a method of labeling that has the exact same number of samples for each class. After i plotted the price map based on equally area label, it turns out that it wasn’t a good way of labeling. 
-Staring here, only equally spaced labeling method was applied to do the classification. Six models were applied:
+## MovieLens Dataset Classification
 
-   * 1. Gradient Boosting Classifier: 46.1%
-   * 2. Random Forest Classifier:     43.8%
-   * 3. Neural Network:               43.2%
-   * 4. Decision Tree Classifier:     38.3%
-   * 5. KNeighbors:                   36.6%
-   * 6. SVM:                          29.2%
-# Result with 1 class tolerance
-Consider that the dataset is time related. As we known from time series, timing has a huge influence in unit price as well. Base on this, think of some close edge situations, we give it a 1 class tolerance and would like to see how that works. Here goes the result:
+Resource: https://grouplens.org/datasets/movielens/
 
-   * 1. Neural Network:               87.3%
-   * 2. Gradient Boosting Classifier: 87.0%
-   * 3. Random Forest Classifier:     84.8%
-   * 4. Decision Tree Classifier:     80.0%
-   * 5. KNeighbors:                   74.3%
-   * 6. SVM:                          68.2%
+The dataset contains, comments towards different movies from various users, movie ids, ratings and etc. 
+The movie genres in this dataset are:
+	* Action
+	* Adventure
+	* Animation
+	* Children's
+	* Comedy
+	* Crime
+	* Documentary
+	* Drama
+	* Fantasy
+	* Film-Noir
+	* Horror
+	* Musical
+	* Mystery
+	* Romance
+	* Sci-Fi
+	* Thriller
+	* War
+	* Western
+	* (no genres listed)
+
+## Purpose:
+   To determine similar movies using ratings and tags. 
+
+## Main steps:
+   1. Data Prepartion: 
+        * a) Genres is transformed as a onehot nuermic array
+	* b) Column title is seperated into year and and tile (Movie name)
+	* c) Label Encoder is used to transform tag
+   2. Visualzie tags to the same movie using WordCloud  
+   3. Feature correlation
+   4. MeanShift and Kmenas cluser models are applied
+
+## Result:
+The result is appealing, based on, genres, tags and few movies that i watched, the movies with similar genres and tags are clustered pretty well, based on the result shown above. Most of the clusters created by these two modeled overlapped pretty well. The difference is caused by the different algorithms of the two models, which makes sense. Overall, using tag and rating as feature is valid for solving this clustering problem.
+
+## Project Structure
+
+```bash
+
+.
+├── notebooks 
+│     └── Weekend_Movie_Trip.ipyb
+├── README.md
+└── data
+      ├── links.csv
+      ├── tags.csv
+      ├── movies.csv
+      └── README.txt
+```
