@@ -35,7 +35,7 @@ The movie genres in this dataset are:
        * a) Genres is transformed as a onehot nuermic array
        * b) Column title is seperated into year and and tile (Movie name)
        * c) Label Encoder is used to transform tag
-   2. Visualzie tags to the same movie using WordCloud  
+   2. Visualize tags to the same movie using WordCloud  
    3. Feature correlation
    4. MeanShift and Kmenas cluser models are applied
 
