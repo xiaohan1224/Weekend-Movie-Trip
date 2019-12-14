@@ -37,10 +37,10 @@ The movie genres in this dataset are:
        * c) Label Encoder is used to transform tag
    2. Visualize tags to the same movie using WordCloud  
    3. Feature correlation
-   4. MeanShift and Kmenas cluser models are applied
+   4. MeanShift and Kmenas cluster models are applied
 
 ## Result:
-The result is appealing, based on, genres, tags and few movies that i watched, the movies with similar genres and tags are clustered pretty well, based on the result shown above. Most of the clusters created by these two modeled overlapped pretty well. The difference is caused by the different algorithms of the two models, which makes sense. Overall, using tag and rating as feature is valid for solving this clustering problem.
+The result is appealing, based on, genres, tags and few movies that I watched, the movies with similar genres and tags are clustered pretty well, based on the result shown above. Most of the clusters created by these two modeled overlapped pretty well. The difference is caused by the different algorithms of the two models, which makes sense. Overall, using tag and rating as feature is valid for solving this clustering problem.
 
 ## Project Structure
 
