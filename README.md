@@ -48,7 +48,7 @@ The result is appealing, based on, genres, tags and few movies that I watched, t
 
 .
 ├── notebooks 
-│     └── Weekend_Movie_Trip.ipyb
+│     └── Weekend_Movie_Trip.ipynb
 ├── README.md
 └── data
       ├── links.csv
